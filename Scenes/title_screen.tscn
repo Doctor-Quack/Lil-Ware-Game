@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://clhenq5vgy1fm"]
 
 [ext_resource type="Script" uid="uid://bog7vvf01gmgx" path="res://Scenes/title_screen.gd" id="1_4gxqj"]
-[ext_resource type="Texture2D" uid="uid://dv8mkjomqrkq7" path="res://Lil'Ware non-title page.png" id="1_p3fck"]
-[ext_resource type="FontFile" uid="uid://6ywva5a6wafu" path="res://BoldPixels.ttf" id="2_4gxqj"]
+[ext_resource type="Texture2D" uid="uid://dv8mkjomqrkq7" path="res://textures/Lil'Ware non-title page.png" id="1_p3fck"]
+[ext_resource type="FontFile" uid="uid://6ywva5a6wafu" path="res://textures/BoldPixels.ttf" id="2_4gxqj"]
 
 [node name="TitleScreen" type="Node2D" unique_id=488486850]
 script = ExtResource("1_4gxqj")

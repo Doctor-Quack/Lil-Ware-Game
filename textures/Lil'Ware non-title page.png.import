@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr3svr4xjo0me"
-path="res://.godot/imported/lil' head.png.png-0e7d5612938c22173e24abdd3b708398.ctex"
+uid="uid://dv8mkjomqrkq7"
+path="res://.godot/imported/Lil'Ware non-title page.png-b7d7c75a1e81aa7cf9ab0129e3bd6c16.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/lil' head.png.png"
-dest_files=["res://.godot/imported/lil' head.png.png-0e7d5612938c22173e24abdd3b708398.ctex"]
+source_file="res://textures/Lil'Ware non-title page.png"
+dest_files=["res://.godot/imported/Lil'Ware non-title page.png-b7d7c75a1e81aa7cf9ab0129e3bd6c16.ctex"]
 
 [params]
 
