@@ -46,29 +46,17 @@ theme_override_fonts/font = ExtResource("2_4gxqj")
 theme_override_font_sizes/font_size = 24
 text = "Start Run"
 
-[node name="Settings" type="Button" parent="Background" unique_id=2042607947]
-layout_mode = 0
-offset_left = 469.99997
-offset_top = 367.00003
-offset_right = 586.0
-offset_bottom = 409.00003
-scale = Vector2(1.5282739, 1.445301)
-theme_override_constants/outline_size = 14
-theme_override_fonts/font = ExtResource("2_4gxqj")
-theme_override_font_sizes/font_size = 24
-text = "QUit"
-
 [node name="Quit" type="Button" parent="Background" unique_id=359073681]
 layout_mode = 0
-offset_left = 470.0
-offset_top = 461.00003
-offset_right = 586.0
-offset_bottom = 503.00003
+offset_left = 467.0
+offset_top = 353.00003
+offset_right = 583.0
+offset_bottom = 395.00003
 scale = Vector2(1.5282739, 1.445301)
 theme_override_constants/outline_size = 14
 theme_override_fonts/font = ExtResource("2_4gxqj")
 theme_override_font_sizes/font_size = 24
-text = "Settings"
+text = "Quit"
 
 [connection signal="pressed" from="Background/Start Run" to="." method="_on_start_run_pressed"]
 [connection signal="pressed" from="Background/Quit" to="." method="_on_quit_pressed"]

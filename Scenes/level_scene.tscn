@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b53weak2q12hd"]
+
+[ext_resource type="Texture2D" uid="uid://ch06ehr3yooda" path="res://level intermission.png" id="1_rol8n"]
+
+[node name="level_scene" type="Node2D" unique_id=180428287]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1986082342]
+offset_right = 1151.0
+offset_bottom = 647.0
+texture = ExtResource("1_rol8n")
+expand_mode = 1
