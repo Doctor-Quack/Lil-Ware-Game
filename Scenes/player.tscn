@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dfqqemqxgub2u"]
 
 [ext_resource type="Script" uid="uid://chdgetukc7gw4" path="res://player.gd" id="1_cvnsp"]
-[ext_resource type="Texture2D" uid="uid://v37iebt8wnsm" path="res://textures/New Piskel-1.png.png" id="2_6t5aa"]
+[ext_resource type="Texture2D" uid="uid://v37iebt8wnsm" path="res://textures/player.png" id="2_6t5aa"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8vltv"]
 radius = 18.0
@@ -15,7 +15,7 @@ script = ExtResource("1_cvnsp")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2108323820]
 texture = ExtResource("2_6t5aa")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1742653632]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1742653632]
 position = Vector2(2, 0)
 shape = SubResource("CircleShape2D_8vltv")
 
