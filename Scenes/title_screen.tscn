@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://clhenq5vgy1fm"]
+
+[ext_resource type="Script" uid="uid://bog7vvf01gmgx" path="res://Scenes/title_screen.gd" id="1_4gxqj"]
+[ext_resource type="Texture2D" uid="uid://dv8mkjomqrkq7" path="res://Lil'Ware non-title page.png" id="1_p3fck"]
+[ext_resource type="FontFile" uid="uid://6ywva5a6wafu" path="res://BoldPixels.ttf" id="2_4gxqj"]
+
+[node name="TitleScreen" type="Node2D" unique_id=488486850]
+script = ExtResource("1_4gxqj")
+
+[node name="Background" type="TextureRect" parent="." unique_id=722052169]
+offset_right = 1153.0
+offset_bottom = 649.0
+texture = ExtResource("1_p3fck")
+expand_mode = 1
+
+[node name="Title" type="RichTextLabel" parent="Background" unique_id=40190066]
+clip_contents = false
+layout_mode = 0
+offset_left = 233.99998
+offset_top = 27.0
+offset_right = 676.19434
+offset_bottom = 127.4838
+scale = Vector2(1.6204015, 1.9089692)
+theme_override_colors/default_color = Color(1, 0.62352943, 0.47843137, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/normal_font = ExtResource("2_4gxqj")
+theme_override_font_sizes/normal_font_size = 108
+text = "Lil' Ware"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background" unique_id=209999400]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 268.0
+offset_right = 647.0
+offset_bottom = 581.0
+
+[node name="Start Run" type="Button" parent="Background" unique_id=112190617]
+layout_mode = 0
+offset_left = 469.0
+offset_top = 269.00003
+offset_right = 585.0
+offset_bottom = 311.00003
+scale = Vector2(1.5282739, 1.445301)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("2_4gxqj")
+theme_override_font_sizes/font_size = 24
+text = "Start Run"
+
+[node name="Settings" type="Button" parent="Background" unique_id=2042607947]
+layout_mode = 0
+offset_left = 469.99997
+offset_top = 367.00003
+offset_right = 586.0
+offset_bottom = 409.00003
+scale = Vector2(1.5282739, 1.445301)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("2_4gxqj")
+theme_override_font_sizes/font_size = 24
+text = "QUit"
+
+[node name="Quit" type="Button" parent="Background" unique_id=359073681]
+layout_mode = 0
+offset_left = 470.0
+offset_top = 461.00003
+offset_right = 586.0
+offset_bottom = 503.00003
+scale = Vector2(1.5282739, 1.445301)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("2_4gxqj")
+theme_override_font_sizes/font_size = 24
+text = "Settings"
+
+[connection signal="pressed" from="Background/Start Run" to="." method="_on_start_run_pressed"]
+[connection signal="pressed" from="Background/Quit" to="." method="_on_quit_pressed"]
