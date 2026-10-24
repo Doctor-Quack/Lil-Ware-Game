@@ -1,11 +1,66 @@
 [gd_scene format=3 uid="uid://b53weak2q12hd"]
 
+[ext_resource type="Script" uid="uid://ddedp3dh15vwg" path="res://Scenes/timer_screen.gd" id="1_2fcgv"]
 [ext_resource type="Texture2D" uid="uid://ch06ehr3yooda" path="res://level intermission.png" id="1_rol8n"]
+[ext_resource type="Texture2D" uid="uid://cr3svr4xjo0me" path="res://Scenes/lil' head.png.png" id="3_qnqh0"]
+[ext_resource type="FontFile" uid="uid://6ywva5a6wafu" path="res://BoldPixels.ttf" id="4_lymix"]
 
 [node name="level_scene" type="Node2D" unique_id=180428287]
+script = ExtResource("1_2fcgv")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1986082342]
 offset_right = 1151.0
 offset_bottom = 647.0
 texture = ExtResource("1_rol8n")
 expand_mode = 1
+
+[node name="life container" type="HBoxContainer" parent="." unique_id=704691104]
+offset_left = 296.00003
+offset_top = 66.0
+offset_right = 480.986
+offset_bottom = 182.81277
+scale = Vector2(2.8623679, 1.0418926)
+
+[node name="lil\' head" type="TextureRect" parent="life container" unique_id=845345762]
+layout_mode = 2
+texture = ExtResource("3_qnqh0")
+
+[node name="lil\' head2" type="TextureRect" parent="life container" unique_id=901715153]
+layout_mode = 2
+texture = ExtResource("3_qnqh0")
+
+[node name="lil\' head3" type="TextureRect" parent="life container" unique_id=567067629]
+layout_mode = 2
+texture = ExtResource("3_qnqh0")
+
+[node name="lil\' head4" type="TextureRect" parent="life container" unique_id=1902344445]
+layout_mode = 2
+texture = ExtResource("3_qnqh0")
+
+[node name="lil\' head5" type="TextureRect" parent="life container" unique_id=1027125790]
+layout_mode = 2
+texture = ExtResource("3_qnqh0")
+
+[node name="Level_node" type="RichTextLabel" parent="." unique_id=1842749168]
+clip_contents = false
+offset_left = 460.0
+offset_top = 260.0
+offset_right = 620.0
+offset_bottom = 330.0
+theme_override_colors/default_color = Color(0.9530831, 0.72541416, 0.55994534, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("4_lymix")
+theme_override_font_sizes/normal_font_size = 48
+text = "Level#"
+
+[node name="Timer_node" type="RichTextLabel" parent="." unique_id=1823126732]
+clip_contents = false
+offset_left = 493.0
+offset_top = 480.0
+offset_right = 573.0
+offset_bottom = 552.0
+theme_override_colors/default_color = Color(0.9530831, 0.72541416, 0.55994534, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("4_lymix")
+theme_override_font_sizes/normal_font_size = 48
+text = "0.0"
