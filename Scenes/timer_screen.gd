@@ -11,7 +11,7 @@ extends Node2D
 var time
 
 func _ready() -> void:
-	await get_tree().create_timer(5.0).timeout #uses the function created
+	await Timer(5.0) #uses the function created
 	
 	if Global.minigames_done < 3: #if you haven't completed 3 minigames
 		Global.minigames_done = Global.minigames_done +1
@@ -23,12 +23,29 @@ func _ready() -> void:
 
 	else:
 		get_tree().change_scene_to_file("res://Scenes/title_screen.tscn")
-func _process(delta : float) -> void
-
-# Called when the node enters the scene tree for the first time.
 
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-
-	pass
+func _process(delta: float) -> void:
+	match Global.lives: 
+		#asks or checks if lives is equal to one of these values, but is not very good looking
+		4:
+			lilhead.hide()
+		3:
+			lilhead.hide()
+			lilhead2.hide()
+		2:
+			lilhead.hide()
+			lilhead2.hide()
+			lilhead3.hide()
+		1:
+			lilhead.hide()
+			lilhead2.hide()
+			lilhead3.hide()
+			lilhead4.hide()
+		0:
+			life_container.hide() #removes all lives from screen
+	timer_node.text = str(time) #this shows the int of the time variable as a string
+	level_node.text = "Level" + str(Global.minigames_done) #this shows you what minigame is being played using concatenation
+func Timer(start_time float): #makes a new function for the countdown
+	time = start_time #make the timer, which is reflected through the timer text, start at your desired number
+	
