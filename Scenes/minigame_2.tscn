@@ -1,3 +1,77 @@
 [gd_scene format=3 uid="uid://bwryocvbsidy0"]
 
+[ext_resource type="Script" uid="uid://c6r3vah5tph7l" path="res://Scenes/minigame_2.gd" id="1_dfb65"]
+[ext_resource type="Texture2D" uid="uid://dt20be17y06ox" path="res://textures/Screenshot 2026-10-25 at 2.45.21 pm.png" id="1_he4ew"]
+[ext_resource type="Texture2D" uid="uid://buutq8wp4kbvn" path="res://textures/New Piskel-1.png (1).png" id="2_l4g8r"]
+[ext_resource type="Script" uid="uid://ny0p4y8mw80a" path="res://Scenes/apple.gd" id="4_rfxq2"]
+
 [node name="minigame_2" type="Node2D" unique_id=384306619]
+script = ExtResource("1_dfb65")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1972084752]
+offset_left = 0.99999994
+offset_right = 1785.0
+offset_bottom = 890.0
+scale = Vector2(0.6472129, 0.7287617)
+texture = ExtResource("1_he4ew")
+
+[node name="apple" type="TextureButton" parent="TextureRect" unique_id=2080192524]
+layout_mode = 0
+offset_left = 237.94333
+offset_top = 631.20776
+offset_right = 277.94333
+offset_bottom = 671.20776
+scale = Vector2(5.448623, 4.755717)
+texture_normal = ExtResource("2_l4g8r")
+texture_pressed = ExtResource("2_l4g8r")
+script = ExtResource("4_rfxq2")
+
+[node name="apple2" type="TextureButton" parent="TextureRect" unique_id=512124775]
+layout_mode = 0
+offset_left = 536.145
+offset_top = 413.02942
+offset_right = 576.145
+offset_bottom = 453.02942
+scale = Vector2(5.448623, 4.755717)
+texture_normal = ExtResource("2_l4g8r")
+texture_pressed = ExtResource("2_l4g8r")
+script = ExtResource("4_rfxq2")
+
+[node name="apple3" type="TextureButton" parent="TextureRect" unique_id=562443192]
+layout_mode = 0
+offset_left = 931.68726
+offset_top = 717.65576
+offset_right = 971.68726
+offset_bottom = 757.65576
+scale = Vector2(5.448623, 4.755717)
+texture_normal = ExtResource("2_l4g8r")
+texture_pressed = ExtResource("2_l4g8r")
+script = ExtResource("4_rfxq2")
+
+[node name="apple4" type="TextureButton" parent="TextureRect" unique_id=452688470]
+layout_mode = 0
+offset_left = 1234.5242
+offset_top = 413.0294
+offset_right = 1274.5242
+offset_bottom = 453.0294
+scale = Vector2(5.448623, 4.755717)
+texture_normal = ExtResource("2_l4g8r")
+texture_pressed = ExtResource("2_l4g8r")
+script = ExtResource("4_rfxq2")
+
+[node name="apple5" type="TextureButton" parent="TextureRect" unique_id=1050006258]
+layout_mode = 0
+offset_left = 834.3468
+offset_top = 533.78217
+offset_right = 874.3468
+offset_bottom = 573.78217
+scale = Vector2(5.448623, 4.755717)
+texture_normal = ExtResource("2_l4g8r")
+texture_pressed = ExtResource("2_l4g8r")
+script = ExtResource("4_rfxq2")
+
+[connection signal="pressed" from="TextureRect/apple" to="TextureRect/apple" method="_on_pressed"]
+[connection signal="pressed" from="TextureRect/apple2" to="TextureRect/apple2" method="_on_pressed"]
+[connection signal="pressed" from="TextureRect/apple3" to="TextureRect/apple3" method="_on_pressed"]
+[connection signal="pressed" from="TextureRect/apple4" to="TextureRect/apple4" method="_on_pressed"]
+[connection signal="pressed" from="TextureRect/apple5" to="TextureRect/apple5" method="_on_pressed"]

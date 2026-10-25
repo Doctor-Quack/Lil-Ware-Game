@@ -79,8 +79,7 @@ position = Vector2(578, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform2" type="StaticBody2D" parent="." unique_id=963518062]
-visible = false
-position = Vector2(1057, -92)
+position = Vector2(1062.9999, -89)
 scale = Vector2(-0.17860988, 1.0199993)
 
 [node name="ColorRect" type="ColorRect" parent="platform2" unique_id=1341246171]
@@ -95,9 +94,8 @@ position = Vector2(573.04395, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform3" type="StaticBody2D" parent="." unique_id=743581098]
-visible = false
 position = Vector2(785, -192)
-scale = Vector2(-0.105949685, 1.0107222)
+scale = Vector2(-0.08991663, 1.0290484)
 
 [node name="ColorRect" type="ColorRect" parent="platform3" unique_id=923877582]
 offset_left = 1.0
@@ -111,7 +109,7 @@ position = Vector2(585, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform4" type="StaticBody2D" parent="." unique_id=313001281]
-position = Vector2(620, -326.00003)
+position = Vector2(621, -323)
 scale = Vector2(-0.1085788, 1.0520376)
 
 [node name="ColorRect" type="ColorRect" parent="platform4" unique_id=266336506]
@@ -126,8 +124,7 @@ position = Vector2(585, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform5" type="StaticBody2D" parent="." unique_id=1486979136]
-visible = false
-position = Vector2(931.00006, -331.00003)
+position = Vector2(931, -323)
 scale = Vector2(-0.10624996, 1.0527717)
 
 [node name="ColorRect" type="ColorRect" parent="platform5" unique_id=957877800]
@@ -142,8 +139,7 @@ position = Vector2(585, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform6" type="StaticBody2D" parent="." unique_id=757530230]
-visible = false
-position = Vector2(625, -417)
+position = Vector2(625, -413)
 scale = Vector2(0.15448524, 1.0190073)
 
 [node name="ColorRect" type="ColorRect" parent="platform6" unique_id=1626386407]
@@ -158,7 +154,6 @@ position = Vector2(576.47925, 626.9999)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform7" type="StaticBody2D" parent="." unique_id=1193000724]
-visible = false
 position = Vector2(989, -228)
 scale = Vector2(0.041965853, 1.0132309)
 
