@@ -7,8 +7,8 @@
 script = ExtResource("1_n0myg")
 
 [node name="minigame_timer" type="RichTextLabel" parent="." unique_id=2118485443]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 103.0
+offset_bottom = 49.0
 theme_override_fonts/normal_font = ExtResource("2_ob6ma")
 theme_override_font_sizes/normal_font_size = 32
 text = "timer"

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://djscxyo5pcxel"]
+
+[ext_resource type="Texture2D" uid="uid://ch06ehr3yooda" path="res://textures/level intermission.png" id="1_8rpo2"]
+[ext_resource type="FontFile" uid="uid://6ywva5a6wafu" path="res://textures/BoldPixels.ttf" id="2_5u8ma"]
+[ext_resource type="Script" uid="uid://bv3febgv3b2qw" path="res://level_number.gd" id="3_uxf1h"]
+[ext_resource type="Script" uid="uid://c1vue0avkhcfh" path="res://minigames_complete.gd" id="4_8lfy6"]
+
+[node name="done_scene" type="Node2D" unique_id=29754410]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1643334676]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.6007107, 0.5996964)
+texture = ExtResource("1_8rpo2")
+
+[node name="Completed!" type="RichTextLabel" parent="." unique_id=1541014347]
+clip_contents = false
+offset_left = 454.0
+offset_top = 90.0
+offset_right = 733.0
+offset_bottom = 152.0
+theme_override_colors/default_color = Color(0.9530831, 0.72541416, 0.55994534, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("2_5u8ma")
+theme_override_font_sizes/normal_font_size = 64
+text = "Passed!"
+
+[node name="level_number" type="RichTextLabel" parent="." unique_id=1161099613]
+clip_contents = false
+offset_left = 458.00003
+offset_top = 370.0
+offset_right = 703.0
+offset_bottom = 409.0
+scale = Vector2(1.0160934, 1.072963)
+theme_override_colors/default_color = Color(0.9530831, 0.72541416, 0.55994534, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/normal_font = ExtResource("2_5u8ma")
+theme_override_font_sizes/normal_font_size = 32
+text = "Current level#"
+script = ExtResource("3_uxf1h")
+
+[node name="minigames_complete" type="RichTextLabel" parent="." unique_id=583104241]
+clip_contents = false
+offset_left = 445.0
+offset_top = 263.0
+offset_right = 729.0
+offset_bottom = 298.0
+theme_override_colors/default_color = Color(0.9530831, 0.72541416, 0.55994534, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/normal_font = ExtResource("2_5u8ma")
+theme_override_font_sizes/normal_font_size = 32
+text = "Levels completed#"
+script = ExtResource("4_8lfy6")

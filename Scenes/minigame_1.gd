@@ -9,7 +9,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if cheese_collected == 3: #two equals signs asks if the values are the same
 		if Global.minigames_done > 3: #uses the global script to see how many minigames have been done
-			get_tree().change_scene_to_file("res://Scenes/done_scene.tscn") #changes screen into a not yet created scene
+			get_tree().change_scene_to_file("res://Scenes/done_screen.tscn") #changes screen into a not yet created scene
 		else:
 			get_tree().change_scene_to_file("res://Scenes/level_scene.tscn") #back to the intermission screen
 	if timer_end:
@@ -18,3 +18,4 @@ func _process(_delta: float) -> void:
 		get_tree().change_scene_to_file("res://Scenes/level_scene.tscn")
 func cheese_collect() -> void:
 	cheese_collected = cheese_collected +1
+	return
