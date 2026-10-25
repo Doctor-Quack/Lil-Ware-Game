@@ -1,11 +1,14 @@
 [gd_scene format=3 uid="uid://67akd58ra2no"]
 
 [ext_resource type="Script" uid="uid://cgtb358v3ms3v" path="res://Scenes/minigame_timer.gd" id="1_n0myg"]
+[ext_resource type="FontFile" uid="uid://6ywva5a6wafu" path="res://textures/BoldPixels.ttf" id="2_ob6ma"]
 
 [node name="minigame_timer" type="Node2D" unique_id=877139059]
 script = ExtResource("1_n0myg")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2118485443]
+[node name="minigame_timer" type="RichTextLabel" parent="." unique_id=2118485443]
 offset_right = 40.0
 offset_bottom = 40.0
+theme_override_fonts/normal_font = ExtResource("2_ob6ma")
+theme_override_font_sizes/normal_font_size = 32
 text = "timer"

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bhu877hpe1wqi"]
 
 [ext_resource type="Script" uid="uid://cfvtnag0rtbmc" path="res://Scenes/minigame_1.gd" id="1_0uv5o"]
-[ext_resource type="Texture2D" uid="uid://ch06ehr3yooda" path="res://textures/level intermission.png" id="1_enoba"]
+[ext_resource type="Texture2D" uid="uid://crf6w117x7ahm" path="res://textures/Screenshot 2026-10-25 at 2.08.02 pm.png" id="2_0uv5o"]
 [ext_resource type="PackedScene" uid="uid://dfqqemqxgub2u" path="res://Scenes/player.tscn" id="2_11mgy"]
 [ext_resource type="Texture2D" uid="uid://cacetnam6qrc2" path="res://textures/cheese_collectible.png" id="3_f6tb2"]
 [ext_resource type="Script" uid="uid://biw45wrti3adx" path="res://Scenes/cheese.gd" id="4_ojqsy"]
@@ -56,8 +56,8 @@ script = ExtResource("1_0uv5o")
 [node name="background" type="TextureRect" parent="." unique_id=1700123286]
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(28.774893, 15.149857)
-texture = ExtResource("1_enoba")
+scale = Vector2(28.774893, 15.61792)
+texture = ExtResource("2_0uv5o")
 expand_mode = 1
 
 [node name="Parallax2D" type="Parallax2D" parent="background" unique_id=1689349550]
@@ -72,14 +72,16 @@ offset_top = 607.0
 offset_right = 41.0
 offset_bottom = 647.0
 scale = Vector2(28.806288, 1.0077256)
+color = Color(0.36185527, 0.17538247, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform1" unique_id=1260243657]
 position = Vector2(578, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform2" type="StaticBody2D" parent="." unique_id=963518062]
-position = Vector2(1049, -95)
-scale = Vector2(-0.23464888, 1.0146861)
+visible = false
+position = Vector2(1057, -92)
+scale = Vector2(-0.17860988, 1.0199993)
 
 [node name="ColorRect" type="ColorRect" parent="platform2" unique_id=1341246171]
 offset_left = 1.0
@@ -93,8 +95,9 @@ position = Vector2(573.04395, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform3" type="StaticBody2D" parent="." unique_id=743581098]
-position = Vector2(659, -217)
-scale = Vector2(-0.10956905, 1.0250577)
+visible = false
+position = Vector2(785, -192)
+scale = Vector2(-0.105949685, 1.0107222)
 
 [node name="ColorRect" type="ColorRect" parent="platform3" unique_id=923877582]
 offset_left = 1.0
@@ -108,8 +111,8 @@ position = Vector2(585, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform4" type="StaticBody2D" parent="." unique_id=313001281]
-position = Vector2(461, -307)
-scale = Vector2(-0.10956905, 1.0250577)
+position = Vector2(620, -326.00003)
+scale = Vector2(-0.1085788, 1.0520376)
 
 [node name="ColorRect" type="ColorRect" parent="platform4" unique_id=266336506]
 offset_left = 1.0
@@ -123,8 +126,9 @@ position = Vector2(585, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform5" type="StaticBody2D" parent="." unique_id=1486979136]
-position = Vector2(879.00006, -305)
-scale = Vector2(-0.10956905, 1.0250577)
+visible = false
+position = Vector2(931.00006, -331.00003)
+scale = Vector2(-0.10624996, 1.0527717)
 
 [node name="ColorRect" type="ColorRect" parent="platform5" unique_id=957877800]
 offset_left = 1.0
@@ -138,8 +142,9 @@ position = Vector2(585, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform6" type="StaticBody2D" parent="." unique_id=757530230]
-position = Vector2(485, -410)
-scale = Vector2(0.21539752, 1.0119642)
+visible = false
+position = Vector2(625, -417)
+scale = Vector2(0.15448524, 1.0190073)
 
 [node name="ColorRect" type="ColorRect" parent="platform6" unique_id=1626386407]
 offset_left = 1.0
@@ -153,8 +158,9 @@ position = Vector2(576.47925, 626.9999)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="platform7" type="StaticBody2D" parent="." unique_id=1193000724]
-position = Vector2(966, -217.00002)
-scale = Vector2(0.03456537, 1.0139533)
+visible = false
+position = Vector2(989, -228)
+scale = Vector2(0.041965853, 1.0132309)
 
 [node name="ColorRect" type="ColorRect" parent="platform7" unique_id=347651775]
 offset_left = 1.0
@@ -168,12 +174,12 @@ position = Vector2(585, 627)
 shape = SubResource("RectangleShape2D_8vltv")
 
 [node name="player" parent="." unique_id=548842010 instance=ExtResource("2_11mgy")]
-position = Vector2(131, 467.00006)
+position = Vector2(104, 563)
 scale = Vector2(1.8963213, 1.7808776)
 
 [node name="cheese" type="Node2D" parent="." unique_id=1371202806]
 position = Vector2(-16, -7)
-scale = Vector2(0.9839781, 1.0004193)
+scale = Vector2(1.0824113, 1.0015202)
 script = ExtResource("4_ojqsy")
 
 [node name="cheese_collectible" type="TextureRect" parent="cheese" unique_id=998517079]
@@ -197,7 +203,61 @@ position = Vector2(-0.004623562, -0.1248886)
 scale = Vector2(1.0881613, 1.2923963)
 shape = SubResource("CircleShape2D_8vltv")
 
+[node name="cheese2" type="Node2D" parent="." unique_id=134148559]
+position = Vector2(-258, -330)
+scale = Vector2(1.1110965, 1.0015379)
+script = ExtResource("4_ojqsy")
+
+[node name="cheese_collectible" type="TextureRect" parent="cheese2" unique_id=287993636]
+offset_left = 848.0
+offset_top = 470.0
+offset_right = 888.0
+offset_bottom = 510.0
+scale = Vector2(1.3392822, 1.2836404)
+texture = ExtResource("3_f6tb2")
+
+[node name="floating_animation" type="AnimationPlayer" parent="cheese2" unique_id=626847568]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_5txvl")
+
+[node name="Area2D" type="Area2D" parent="cheese2" unique_id=1250893002]
+position = Vector2(876.03577, 498.79086)
+scale = Vector2(2.3317432, 1.7224749)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cheese2/Area2D" unique_id=1609621945]
+position = Vector2(-0.004623562, -0.1248886)
+scale = Vector2(1.0881613, 1.2923963)
+shape = SubResource("CircleShape2D_8vltv")
+
+[node name="cheese3" type="Node2D" parent="." unique_id=1810024126]
+position = Vector2(132, -119.000015)
+scale = Vector2(1.0049053, 0.9599764)
+script = ExtResource("4_ojqsy")
+
+[node name="cheese_collectible" type="TextureRect" parent="cheese3" unique_id=1270329135]
+offset_left = 848.0
+offset_top = 470.0
+offset_right = 888.0
+offset_bottom = 510.0
+scale = Vector2(1.3392822, 1.2836404)
+texture = ExtResource("3_f6tb2")
+
+[node name="floating_animation" type="AnimationPlayer" parent="cheese3" unique_id=419208310]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_5txvl")
+
+[node name="Area2D" type="Area2D" parent="cheese3" unique_id=2007639589]
+position = Vector2(876.03577, 498.79086)
+scale = Vector2(2.3317432, 1.7224749)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cheese3/Area2D" unique_id=1842401365]
+position = Vector2(-0.004623562, -0.1248886)
+scale = Vector2(1.0881613, 1.2923963)
+shape = SubResource("CircleShape2D_8vltv")
+
 [node name="minigame_timer" parent="." unique_id=877139059 instance=ExtResource("6_jmcek")]
 position = Vector2(1071, 49)
 
 [connection signal="cheese_collected" from="cheese" to="player" method="_on_cheese_cheese_collected"]
+[connection signal="cheese_collected" from="cheese2" to="player" method="_on_cheese_cheese_collected"]
+[connection signal="cheese_collected" from="cheese3" to="player" method="_on_cheese_cheese_collected"]
